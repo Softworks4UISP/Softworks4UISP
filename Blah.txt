@@ -1,0 +1,7 @@
+BEFORE STARTING OR UPLOADING WORK:
+
+git pull --rebase origin master
+
+git add .
+git commit -m "Adds Blah.txt"
+git push origin master
