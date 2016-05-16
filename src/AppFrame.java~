@@ -1,0 +1,15 @@
+import javax.swing.*;
+
+
+public class AppFrame extends JFrame {
+  
+  public AppFrame() { 
+    super ("Media Manager 4U");
+    
+    setSize (400, 400);
+    setVisible (true);
+    setResizable (false);
+    setDefaultCloseOperation (JFrame.DISPOSE_ON_CLOSE);
+    
+  }
+}
