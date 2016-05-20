@@ -1,0 +1,11 @@
+public class AppFrame extends JFrame
+{
+  public AppFrame() { 
+    
+    super ("Media Manager 4U");
+    
+    setSize (600, 400);
+    setVisible (true);
+    setResizable (false);
+  }
+}

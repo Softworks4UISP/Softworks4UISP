@@ -1,0 +1,57 @@
+git init]
+git init
+git remote -v
+324982313@C-34XTXQ1 MINGW64 /c/Users/324982313/Desktop/GitHub
+$ git init]
+git: 'init]' is not a git command. See 'git --help'.
+
+Did you mean this?
+        init
+
+324982313@C-34XTXQ1 MINGW64 /c/Users/324982313/Desktop/GitHub
+$ git init
+Initialized empty Git repository in C:/Users/324982313/Desktop/GitHub/.git/
+
+324982313@C-34XTXQ1 MINGW64 /c/Users/324982313/Desktop/GitHub (master)
+$ git remote -v https://github.com/Softworks4UISP/Softworks4UISP.git
+git pull origerror: Unknown subcommand: https://github.com/Softworks4UISP/Softworks4UISP.git
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+in mas
+324982313@C-34XTXQ1 MINGW64 /c/Users/324982313/Desktop/GitHub (master)
+$ git pull origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+324982313@C-34XTXQ1 MINGW64 /c/Users/324982313/Desktop/GitHub (master)
+$ git remote add origin  https://github.com/Softworks4UISP/Softworks4UISP.git
+git p
+324982313@C-34XTXQ1 MINGW64 /c/Users/324982313/Desktop/GitHub (master)
+$ git pull origin master
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 9 (delta 0), reused 9 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+From https://github.com/Softworks4UISP/Softworks4UISP
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+324982313@C-34XTXQ1 MINGW64 /c/Users/324982313/Desktop/GitHub (master)
+$

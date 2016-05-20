@@ -1,6 +1,25 @@
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
+/**
+ * The AppRunner
+ * 
+ * @author A Barenboim
+ * @version 1.00.00
+ * 
+ * <b>Instance variables: </b>
+ * <p>
+ * <b>display </b> This creates an instance of the AppFrame class.
+ * <p>
+ * <b>bs </b> This creates an instance of the BufferStrategy class
+ * <p>
+ * <b> g </b> This creates an instance of the Graphics class
+ * <p>
+ * <b>running </b> This creates a boolean variable
+ * <p>
+ * <b>thread </b> This creates an instance of the Thread class
+ */
+
 
 public class AppRunner implements Runnable{
     
@@ -10,17 +29,21 @@ public class AppRunner implements Runnable{
     private boolean running = false;
     private Thread thread;
     
-    public AppRunner () {
+    public AppRunner ()
+    {
 
     }
 
-    private void init() {
+    private void init()
+    {
         display = new AppFrame();
     }
 
-    private void render() {
+    private void render()
+    {
         bs = display.getCanvas().getBufferStrategy();
-        if (bs == null) {
+        if (bs == null) 
+        {
             display.getCanvas().createBufferStrategy(3);
             return;
         }
@@ -36,11 +59,10 @@ public class AppRunner implements Runnable{
         //g.dispose();
     }
 
-    public void run() {
-
+    public void run() 
+    {
         init();
         stop();
-
     }
     
     

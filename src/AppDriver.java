@@ -13,10 +13,15 @@ public class AppDriver {
     * @param args [ ]  String array that allows command line
     * parameters to be used when executing the program.
     */ 
+
   public static void main(String[] args) { 
     // AppRunner game = new AppRunner (); 
     //game.start ();
-    new AppFrame ();
+   // new AppFrame ();
+   new AppFrame2 ();
+  
+    
   }
   
 }
+

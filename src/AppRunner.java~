@@ -28,9 +28,9 @@ public class AppRunner implements Runnable{
         //earse
         g.clearRect(0, 0, 400, 400);
         //Draw Here!
-        for (int i = 0; i <= 400; i += 32){
-        g.drawRect(0, 0, i, 400);
-        }
+        //for (int i = 0; i <= 400; i += 32){
+        g.drawRect(0, 0, 600, 400);
+        //}
         //end drawing!
         bs.show();
         //g.dispose();

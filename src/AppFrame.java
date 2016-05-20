@@ -6,11 +6,13 @@ import java.awt.*;
  * @author A Barenboim
  * @version 1.00.00
  */
-public class AppFrame extends JFrame {
+public class AppFrame extends JFrame
+{
   
   Canvas myCanvas;
-  
+  AddressBook a = new AddressBook ();
   public AppFrame() { 
+    
     super ("Media Manager 4U");
     
     setSize (600, 400);
@@ -25,12 +27,16 @@ public class AppFrame extends JFrame {
     myCanvas.setMinimumSize(new Dimension(600, 400));
     myCanvas.setFocusable (false);
     
+   //add(a);
     add(myCanvas);
+ add(a);
+ a.createDisplay (this.getContentPane());
     pack();
   }
   
   public Canvas getCanvas() {
     return myCanvas;
   }
+  
   
 }
